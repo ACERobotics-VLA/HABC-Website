@@ -77,17 +77,35 @@
     }
 
     .authors {
-      margin: 22px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 12px;
+      max-width: 980px;
+      margin: 22px auto 0;
       color: #303431;
       font-size: 1.04rem;
       font-weight: 650;
+      line-height: 1.55;
+    }
+
+    .author {
+      display: inline-block;
+      white-space: nowrap;
     }
 
     .affiliation {
-      margin: 6px 0 0;
+      margin: 10px auto 0;
+      max-width: 920px;
       color: var(--muted);
       font-size: 0.98rem;
       font-weight: 560;
+      line-height: 1.5;
+    }
+
+    .notes {
+      margin-top: 4px;
+      font-size: 0.88rem;
     }
 
     .links {
@@ -371,11 +389,26 @@
   <header class="hero wrap">
     <h1>Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes</h1>
     <p class="subtitle">HABC fine-tunes vision-language-action policies with hierarchical advantage weighting, turning sparse rollout outcomes into transition-level supervision for real-world robot manipulation.</p>
-    <p class="authors">[AUTHOR 1], [AUTHOR 2]</p>
-    <p class="affiliation">[AFFILIATION]</p>
+    <p class="authors">
+      <span class="author">Tongyan Fang<sup>1,2</sup></span>
+      <span class="author">Siyuan Huang<sup>1&dagger;</sup></span>
+      <span class="author">Naiyu Fang<sup>1,3</sup></span>
+      <span class="author">Ganlong Zhao<sup>1,3</sup></span>
+      <span class="author">Zhongjin Luo<sup>1,3</sup></span>
+      <span class="author">Jianbo Liu<sup>1</sup></span>
+      <span class="author">Xiaogang Wang<sup>1</sup></span>
+      <span class="author">Ying Dong<sup>2 &#9993;</sup></span>
+      <span class="author">Hongsheng Li<sup>1,3 &#9993;</sup></span>
+    </p>
+    <p class="affiliation">
+      <sup>1</sup>ACE Robotics &nbsp;&nbsp;
+      <sup>2</sup>Shenzhen International Graduate School, Tsinghua University<br>
+      <sup>3</sup>The Chinese University of Hong Kong
+      <span class="notes"><br><sup>&dagger;</sup>Project leader &nbsp;&nbsp; <sup>&#9993;</sup>Corresponding authors</span>
+    </p>
     <div class="links">
-      <a class="btn" href="[ARXIV_URL]">arXiv</a>
-      <a class="btn secondary" href="[CODE_URL]">Code</a>
+      <a class="btn" href="https://arxiv.org/abs/2606.17043">arXiv</a>
+      <a class="btn secondary" href="https://github.com/ACERobotics-VLA/HABC">Code</a>
     </div>
   </header>
 
@@ -508,7 +541,15 @@
     <section id="citation">
       <div class="wrap">
         <h2>Citation</h2>
-        <pre class="citation"><code>[CITATION PLACEHOLDER]</code></pre>
+        <pre class="citation"><code>@misc{fang2026habc,
+      title={Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes}, 
+      author={Tongyan Fang and Siyuan Huang and Naiyu Fang and Ganlong Zhao and Zhongjin Luo and Jianbo Liu and Xiaogang Wang and Ying Dong and Hongsheng Li},
+      year={2026},
+      eprint={2606.17043},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2606.17043}, 
+}</code></pre>
       </div>
     </section>
   </main>
